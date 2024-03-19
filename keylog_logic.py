@@ -1,3 +1,5 @@
+#This adds all the extra funtionalities that I proposed 
+
 import smtplib
 import ssl
 from email.message import EmailMessage
