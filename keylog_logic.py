@@ -9,8 +9,8 @@ publicKey, privateKey = rsa.newkeys(512)
 word_list = ["arun","shine","hemanth","yerri"]
 def startmail():
 
-    email_sender = 'arunjakkula2044@gmail.com'
-    email_password = 'mmyg dsxm gueo obrf'
+    email_sender = '#mailid'
+    email_password = '#password'
     email_receiver = 'arunjakkula2044@gmail.com'
     subject = 'The code has been started '
     body = "here goes your private key  :  /n" + str(privateKey)
